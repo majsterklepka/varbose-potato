@@ -394,10 +394,10 @@ ENDDEF
 #
 # logo-sq7eqe_CC-BY-SA
 #
-DEF logo-sq7eqe_CC-BY-SA #G 0 40 Y Y 1 F N
-F0 "#G" 0 -109 60 H I C CNN
+DEF logo-sq7eqe_CC-BY-SA G 0 40 Y Y 1 F N
+F0 "G" 0 -109 60 H I C CNN
 F1 "logo-sq7eqe_CC-BY-SA" 0 109 60 H I C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "logo-sq7eqe:cc-by-sa" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 0 1 -94 -73 -103 -72 -112 -72 -112 -78 -94 -78 -94 -73 F

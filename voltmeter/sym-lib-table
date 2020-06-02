@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name logo-sq7eqe)(type Legacy)(uri ${KIPRJMOD}/logo-sq7eqe.lib)(options "")(descr ""))
+  (lib (name logo-sq7eqe)(type Legacy)(uri ${KIPRJMOD}/library/logo-sq7eqe.lib)(options "")(descr ""))
+  (lib (name LED_Display)(type Legacy)(uri ${KIPRJMOD}/library/LED_Display.lib)(options "")(descr ""))
 )

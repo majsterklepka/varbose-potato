@@ -74,7 +74,7 @@ ENDDEF
 DEF LED_Display_HDSP-5623 D 0 40 Y Y 1 F N
 F0 "D" 0 400 50 H V C CNN
 F1 "LED_Display_HDSP-5623" 0 300 50 H V C CNN
-F2 "" -550 0 50 H I C CNN
+F2 "led_display:package_led_display_0.56in_dual" -550 0 50 H I C CNN
 F3 "" -550 0 50 H I C CNN
 DRAW
 T 0 0 250 50 0 0 0 "CC Dual 7 Segment  LED Display" Normal 0 C C

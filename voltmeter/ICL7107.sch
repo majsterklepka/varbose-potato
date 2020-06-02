@@ -568,7 +568,7 @@ U 1 1 5ECE705B
 P 4850 7400
 F 0 "G1" H 4850 7291 60  0001 C CNN
 F 1 "CC-BY-SA" H 4850 7509 60  0001 C CNN
-F 2 "logo:logo-cc-by-sa-1" H 4850 7400 50  0001 C CNN
+F 2 "logo-sq7eqe:cc-by-sa" H 4850 7400 50  0001 C CNN
 F 3 "" H 4850 7400 50  0001 C CNN
 	1    4850 7400
 	1    0    0    -1  

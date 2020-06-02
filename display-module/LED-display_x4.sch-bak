@@ -346,10 +346,10 @@ f1-1
 Text Label 3750 5200 2    50   ~ 0
 a2-1
 $Comp
-L Connector_Generic:Conn_01x01 M?
+L Connector_Generic:Conn_01x01 M1
 U 1 1 5ECD7476
 P 9450 3400
-F 0 "M?" H 9530 3396 50  0000 L CNN
+F 0 "M1" H 9530 3396 50  0000 L CNN
 F 1 "Conn_01x01" H 9530 3351 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2" H 9450 3400 50  0001 C CNN
 F 3 "~" H 9450 3400 50  0001 C CNN
@@ -357,10 +357,10 @@ F 3 "~" H 9450 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 M?
+L Connector_Generic:Conn_01x01 M2
 U 1 1 5ECD7FC2
 P 9450 3650
-F 0 "M?" H 9530 3646 50  0000 L CNN
+F 0 "M2" H 9530 3646 50  0000 L CNN
 F 1 "Conn_01x01" H 9530 3601 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2" H 9450 3650 50  0001 C CNN
 F 3 "~" H 9450 3650 50  0001 C CNN
@@ -368,10 +368,10 @@ F 3 "~" H 9450 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 M?
+L Connector_Generic:Conn_01x01 M4
 U 1 1 5ECD82F7
 P 9900 3650
-F 0 "M?" H 9980 3646 50  0000 L CNN
+F 0 "M4" H 9980 3646 50  0000 L CNN
 F 1 "Conn_01x01" H 9980 3601 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2" H 9900 3650 50  0001 C CNN
 F 3 "~" H 9900 3650 50  0001 C CNN
@@ -379,10 +379,10 @@ F 3 "~" H 9900 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 M?
+L Connector_Generic:Conn_01x01 M3
 U 1 1 5ECD861E
 P 9900 3400
-F 0 "M?" H 9980 3396 50  0000 L CNN
+F 0 "M3" H 9980 3396 50  0000 L CNN
 F 1 "Conn_01x01" H 9980 3351 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2" H 9900 3400 50  0001 C CNN
 F 3 "~" H 9900 3400 50  0001 C CNN

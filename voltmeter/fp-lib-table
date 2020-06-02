@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name LED-display_x4)(type KiCad)(uri ${KIPRJMOD}/LED-display_x4.pretty)(options "")(descr ""))
-  (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/logo.pretty)(options "")(descr ""))
+  (lib (name LED-display_x4)(type KiCad)(uri ${KIPRJMOD}/library/LED-display_x4.pretty)(options "")(descr ""))
+  (lib (name logo-sq7eqe)(type KiCad)(uri ${KIPRJMOD}/library/logo-sq7eqe.pretty)(options "")(descr ""))
 )
