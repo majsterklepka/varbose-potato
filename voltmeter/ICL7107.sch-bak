@@ -568,7 +568,7 @@ U 1 1 5ECE705B
 P 4850 7400
 F 0 "G1" H 4850 7291 60  0001 C CNN
 F 1 "CC-BY-SA" H 4850 7509 60  0001 C CNN
-F 2 "logo:logo-cc-by-sa-1" H 4850 7400 50  0001 C CNN
+F 2 "logo-sq7eqe:cc-by-sa" H 4850 7400 50  0001 C CNN
 F 3 "" H 4850 7400 50  0001 C CNN
 	1    4850 7400
 	1    0    0    -1  
@@ -795,28 +795,6 @@ $EndComp
 Wire Wire Line
 	2550 3250 3000 3250
 $Comp
-L LED_Display:LED-Display_x4 D1
-U 1 1 5ECF9A78
-P 5450 2200
-F 0 "D1" V 4525 2475 50  0000 C CNN
-F 1 "LED-Display_x4" V 4616 2475 50  0000 C CNN
-F 2 "LED-display_x4:LED-Display_x4_package" H 5450 2450 50  0001 C CNN
-F 3 "" H 5450 2200 50  0001 C CNN
-	1    5450 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L LED_Display:LED-Display_x4 D1
-U 2 1 5ECFC1DC
-P 5450 3800
-F 0 "D1" V 6250 4050 50  0000 C CNN
-F 1 "LED-Display_x4" V 6350 4050 50  0000 C CNN
-F 2 "LED-display_x4:LED-Display_x4_package" H 5450 4050 50  0001 C CNN
-F 3 "" H 5450 3800 50  0001 C CNN
-	2    5450 3800
-	0    1    1    0   
-$EndComp
-$Comp
 L Graphic:Logo_Open_Hardware_Large LOGO1
 U 1 1 5ED11310
 P 6100 7200
@@ -833,4 +811,26 @@ U 5ECBC5A1
 F0 "negative voltage converter" 50
 F1 "file5ECBC5A0.sch" 50
 $EndSheet
+$Comp
+L LED_Display:LED-Display_x4_CA D?
+U 1 1 5EFBBD4C
+P 5450 2200
+F 0 "D?" V 4525 2475 50  0000 C CNN
+F 1 "LED-Display_x4_CA" V 4616 2475 50  0000 C CNN
+F 2 "LED-display_x4:LED-Display_x4_package" H 5450 2450 50  0001 C CNN
+F 3 "" H 5450 2200 50  0001 C CNN
+	1    5450 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Display:LED-Display_x4_CA D?
+U 2 1 5EFBDD2C
+P 5450 3800
+F 0 "D?" V 6250 4050 50  0000 C CNN
+F 1 "LED-Display_x4_CA" V 6350 4100 50  0000 C CNN
+F 2 "LED-display_x4:LED-Display_x4_package" H 5450 4050 50  0001 C CNN
+F 3 "" H 5450 3800 50  0001 C CNN
+	2    5450 3800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

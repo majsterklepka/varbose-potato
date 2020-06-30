@@ -252,10 +252,10 @@ F 3 "~" H 10050 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D3
+L Diode:1N4001 D2
 U 1 1 5ECC12B1
 P 7500 1500
-F 0 "D3" H 7500 1283 50  0000 C CNN
+F 0 "D2" H 7500 1283 50  0000 C CNN
 F 1 "1N4001" H 7500 1374 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 1325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 1500 50  0001 C CNN
@@ -429,10 +429,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 3400 6250 3400
 $Comp
-L Diode:1N4001 D7
+L Diode:1N4001 D6
 U 1 1 5ED0FC3E
 P 7500 4350
-F 0 "D7" V 7546 4270 50  0000 R CNN
+F 0 "D6" V 7546 4270 50  0000 R CNN
 F 1 "1N4001" V 7455 4270 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 4175 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 4350 50  0001 C CNN
@@ -440,10 +440,10 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 4350 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4001 D6
+L Diode:1N4001 D5
 U 1 1 5ED10897
 P 7500 3950
-F 0 "D6" V 7546 3870 50  0000 R CNN
+F 0 "D5" V 7546 3870 50  0000 R CNN
 F 1 "1N4001" V 7455 3870 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 3775 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3950 50  0001 C CNN
@@ -451,10 +451,10 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3950 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4001 D5
+L Diode:1N4001 D4
 U 1 1 5ED10E1C
 P 7500 3550
-F 0 "D5" V 7546 3470 50  0000 R CNN
+F 0 "D4" V 7546 3470 50  0000 R CNN
 F 1 "1N4001" V 7455 3470 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 3375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3550 50  0001 C CNN
@@ -462,10 +462,10 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3550 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4001 D4
+L Diode:1N4001 D3
 U 1 1 5ED1133D
 P 7500 3150
-F 0 "D4" V 7546 3070 50  0000 R CNN
+F 0 "D3" V 7546 3070 50  0000 R CNN
 F 1 "1N4001" V 7455 3070 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 2975 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3150 50  0001 C CNN
@@ -795,28 +795,6 @@ $EndComp
 Wire Wire Line
 	2550 3250 3000 3250
 $Comp
-L LED_Display:LED-Display_x4 D1
-U 1 1 5ECF9A78
-P 5450 2200
-F 0 "D1" V 4525 2475 50  0000 C CNN
-F 1 "LED-Display_x4" V 4616 2475 50  0000 C CNN
-F 2 "LED-display_x4:LED-Display_x4_package" H 5450 2450 50  0001 C CNN
-F 3 "" H 5450 2200 50  0001 C CNN
-	1    5450 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L LED_Display:LED-Display_x4 D1
-U 2 1 5ECFC1DC
-P 5450 3800
-F 0 "D1" V 6250 4050 50  0000 C CNN
-F 1 "LED-Display_x4" V 6350 4050 50  0000 C CNN
-F 2 "LED-display_x4:LED-Display_x4_package" H 5450 4050 50  0001 C CNN
-F 3 "" H 5450 3800 50  0001 C CNN
-	2    5450 3800
-	0    1    1    0   
-$EndComp
-$Comp
 L Graphic:Logo_Open_Hardware_Large LOGO1
 U 1 1 5ED11310
 P 6100 7200
@@ -833,4 +811,26 @@ U 5ECBC5A1
 F0 "negative voltage converter" 50
 F1 "file5ECBC5A0.sch" 50
 $EndSheet
+$Comp
+L LED_Display:LED-Display_x4_CA D1
+U 1 1 5EFBBD4C
+P 5450 2200
+F 0 "D1" V 4525 2475 50  0000 C CNN
+F 1 "LED-Display_x4_CA" V 4616 2475 50  0000 C CNN
+F 2 "LED-display_x4:LED-Display_x4_package" H 5450 2450 50  0001 C CNN
+F 3 "" H 5450 2200 50  0001 C CNN
+	1    5450 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Display:LED-Display_x4_CA D1
+U 2 1 5EFBDD2C
+P 5450 3800
+F 0 "D1" V 6250 4050 50  0000 C CNN
+F 1 "LED-Display_x4_CA" V 6350 4100 50  0000 C CNN
+F 2 "LED-display_x4:LED-Display_x4_package" H 5450 4050 50  0001 C CNN
+F 3 "" H 5450 3800 50  0001 C CNN
+	2    5450 3800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

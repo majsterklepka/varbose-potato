@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LED_Display:HDSP-5623 D1
-U 1 1 5ECCCB1A
-P 3700 3400
-F 0 "D1" H 4478 3721 50  0000 L CNN
-F 1 "HDSP-5623" H 4478 3630 50  0000 L CNN
-F 2 "led_display:package_led_display_0.56in_dual" H 3150 3400 50  0001 C CNN
-F 3 "https://docs.broadcom.com/doc/AV02-1107EN" H 3150 3400 50  0001 C CNN
-	1    3700 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x09_Counter_Clockwise J1
 U 1 1 5ECCED08
 P 3200 4900
@@ -171,17 +160,6 @@ Text Label 3750 4800 2    50   ~ 0
 b1-1
 Text Label 3750 4700 2    50   ~ 0
 a1-1
-$Comp
-L LED_Display:HDSP-5623 D2
-U 1 1 5ECEB385
-P 6250 3400
-F 0 "D2" H 7028 3721 50  0000 L CNN
-F 1 "HDSP-5623" H 7028 3630 50  0000 L CNN
-F 2 "led_display:package_led_display_0.56in_dual" H 5700 3400 50  0001 C CNN
-F 3 "https://docs.broadcom.com/doc/AV02-1107EN" H 5700 3400 50  0001 C CNN
-	1    6250 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 3500 5550 3700
 Wire Wire Line
@@ -399,4 +377,26 @@ Wire Notes Line
 	10250 3200 9050 3200
 Text Notes 9050 3200 0    50   ~ 0
 Mounting hole M2.2
+$Comp
+L LED_Display:HDSP-5623-CA D1
+U 1 1 5EFB6DA8
+P 3700 3400
+F 0 "D1" H 4478 3721 50  0000 L CNN
+F 1 "HDSP-5623-CA" H 4478 3630 50  0000 L CNN
+F 2 "" H 3150 3400 50  0001 C CNN
+F 3 "" H 3150 3400 50  0001 C CNN
+	1    3700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_Display:HDSP-5623-CA D2
+U 1 1 5EFB75C2
+P 6250 3400
+F 0 "D2" H 7028 3721 50  0000 L CNN
+F 1 "HDSP-5623-CA" H 7028 3630 50  0000 L CNN
+F 2 "" H 5700 3400 50  0001 C CNN
+F 3 "" H 5700 3400 50  0001 C CNN
+	1    6250 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-(module package_led_display_0.56in_dual (layer F.Cu) (tedit 5ED596E9)
+(module package_led_display_0.56in_dual (layer F.Cu) (tedit 5EFB40D9)
   (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -13,7 +13,7 @@
   (fp_line (start -12.573 -8.51) (end -12.573 8.51) (layer F.CrtYd) (width 0.12))
   (fp_line (start -12.573 8.51) (end 12.573 8.51) (layer F.CrtYd) (width 0.12))
   (fp_line (start -12.573 -8.51) (end 12.573 -8.51) (layer F.CrtYd) (width 0.12))
-  (fp_text user "7 segment cc dual display" (at 0 -4.064) (layer F.Fab)
+  (fp_text user "7 segment dual display" (at 0 -4.064) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text user LED (at 0 3.556) (layer F.Fab)
@@ -38,11 +38,6 @@
   (pad 11 thru_hole circle (at 7.62 -7.62) (size 1.1176 1.1176) (drill 0.508) (layers *.Cu *.Mask))
   (pad 10 thru_hole circle (at 10.16 -7.62) (size 1.1176 1.1176) (drill 0.508) (layers *.Cu *.Mask))
   (model /home/sq7eqe/Dokumenty/Kicad/packages3d/package_led_display_0.56in_dual.step
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model ${KIPRJMOD}/library/packages3d/package_led_display_0.56in_dual.step
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
