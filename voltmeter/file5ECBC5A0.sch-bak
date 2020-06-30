@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Diode:1N914 D2
+L Diode:1N914 D7
 U 1 1 5ECB70C6
 P 6500 2800
-F 0 "D2" V 6454 2880 50  0000 L CNN
+F 0 "D7" V 6454 2880 50  0000 L CNN
 F 1 "1N914" V 6545 2880 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6500 2625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 6500 2800 50  0001 C CNN
@@ -192,10 +192,10 @@ Wire Wire Line
 Text Label 6750 4700 0    50   ~ 0
 V-
 $Comp
-L power:GND #PWR0101
+L power:GND #PWR04
 U 1 1 5ECD026B
 P 6750 2350
-F 0 "#PWR0101" H 6750 2100 50  0001 C CNN
+F 0 "#PWR04" H 6750 2100 50  0001 C CNN
 F 1 "GND" H 6755 2177 50  0000 C CNN
 F 2 "" H 6750 2350 50  0001 C CNN
 F 3 "" H 6750 2350 50  0001 C CNN
@@ -219,10 +219,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR03
 U 1 1 5ECD1B24
 P 3750 3550
-F 0 "#PWR0102" H 3750 3300 50  0001 C CNN
+F 0 "#PWR03" H 3750 3300 50  0001 C CNN
 F 1 "GND" H 3755 3377 50  0000 C CNN
 F 2 "" H 3750 3550 50  0001 C CNN
 F 3 "" H 3750 3550 50  0001 C CNN
