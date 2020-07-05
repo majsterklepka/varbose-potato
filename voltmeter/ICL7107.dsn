@@ -33,8 +33,12 @@
     )
   )
   (placement
+    (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+      (place D2 157480 -114300 front 270 (PN 1N4148))
+      (place D1 163830 -121920 front 90 (PN 1N4148))
+    )
     (component "LED-display_x4:LED-Display_x4_package"
-      (place D1 92710 -71120 front 0 (PN "LED-Display_x4_CA"))
+      (place D3 92710 -71120 front 0 (PN "LED-Display_x4_CA"))
     )
     (component "logo-sq7eqe:cc-by-sa"
       (place G1 99060 -93980 front 90 (PN "CC-BY-SA"))
@@ -65,19 +69,19 @@
       (place C11 144780 -85090 front 0 (PN 10u))
     )
     (component "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-      (place D2 152400 -80010 front 270 (PN 1N4001))
-      (place D3 97790 -63500 front 0 (PN 1N4001))
+      (place D4 152400 -80010 front 270 (PN 1N4001))
+      (place D5 97790 -63500 front 0 (PN 1N4001))
     )
     (component "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal::1"
-      (place D4 111760 -63500 front 0 (PN 1N4001))
-      (place D5 125730 -63500 front 0 (PN 1N4001))
-      (place D6 139700 -63500 front 0 (PN 1N4001))
-    )
-    (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-      (place D7 144780 -78740 front 90 (PN 1N914))
+      (place D6 111760 -63500 front 0 (PN 1N4001))
+      (place D7 125730 -63500 front 0 (PN 1N4001))
+      (place D8 139700 -63500 front 0 (PN 1N4001))
     )
     (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal::1"
-      (place D8 148590 -71120 front 270 (PN 1N914))
+      (place D9 144780 -78740 front 90 (PN 1N914))
+    )
+    (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal::2"
+      (place D10 148590 -71120 front 270 (PN 1N914))
     )
     (component "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm"
       (place J1 167640 -90170 front 90 (PN "+9...12V DC"))
@@ -97,8 +101,8 @@
       (place M4 91440 -124460 front 0 (PN M2.2))
     )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
-      (place R1 140970 -115570 front 180 (PN 6k8))
-      (place R2 160020 -110490 front 0 (PN 1M))
+      (place R2 140970 -115570 front 180 (PN 6k8))
+      (place R1 160020 -110490 front 0 (PN 1M))
       (place R3 124460 -106680 front 270 (PN 100k))
     )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal::1
@@ -127,6 +131,32 @@
     )
   )
   (library
+    (image "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+      (outline (path signal 50  8670 1250  -1050 1250))
+      (outline (path signal 50  8670 -1250  8670 1250))
+      (outline (path signal 50  -1050 -1250  8670 -1250))
+      (outline (path signal 50  -1050 1250  -1050 -1250))
+      (outline (path signal 120  2290 1120  2290 -1120))
+      (outline (path signal 120  2530 1120  2530 -1120))
+      (outline (path signal 120  2410 1120  2410 -1120))
+      (outline (path signal 120  6580 0  5930 0))
+      (outline (path signal 120  1040 0  1690 0))
+      (outline (path signal 120  5930 1120  1690 1120))
+      (outline (path signal 120  5930 -1120  5930 1120))
+      (outline (path signal 120  1690 -1120  5930 -1120))
+      (outline (path signal 120  1690 1120  1690 -1120))
+      (outline (path signal 100  2310 1000  2310 -1000))
+      (outline (path signal 100  2510 1000  2510 -1000))
+      (outline (path signal 100  2410 1000  2410 -1000))
+      (outline (path signal 100  7620 0  5810 0))
+      (outline (path signal 100  0 0  1810 0))
+      (outline (path signal 100  5810 1000  1810 1000))
+      (outline (path signal 100  5810 -1000  5810 1000))
+      (outline (path signal 100  1810 -1000  5810 -1000))
+      (outline (path signal 100  1810 1000  1810 -1000))
+      (pin Oval[A]Pad_1600x1600_um 2 7620 0)
+      (pin Rect[A]Pad_1600x1600_um 1 0 0)
+    )
     (image "LED-display_x4:LED-Display_x4_package"
       (outline (path signal 120  -3810 7620  -5080 7620))
       (outline (path signal 120  -3810 1270  -3810 7620))
@@ -605,7 +635,7 @@
       (pin Rect[A]Pad_2200x2200_um 1 0 0)
       (pin Oval[A]Pad_2200x2200_um 2 10160 0)
     )
-    (image "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+    (image "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal::1"
       (outline (path signal 100  1810 1000  1810 -1000))
       (outline (path signal 100  1810 -1000  5810 -1000))
       (outline (path signal 100  5810 -1000  5810 1000))
@@ -631,7 +661,7 @@
       (pin Oval[A]Pad_1600x1600_um 2 7620 0)
       (pin Rect[A]Pad_1600x1600_um 1 0 0)
     )
-    (image "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal::1"
+    (image "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal::2"
       (outline (path signal 50  8670 1250  -1050 1250))
       (outline (path signal 50  8670 -1250  8670 1250))
       (outline (path signal 50  -1050 -1250  8670 -1250))
@@ -1233,10 +1263,7 @@
       (pins C2-1 U2-29)
     )
     (net "Net-(C3-Pad1)"
-      (pins C3-1 R2-1 U2-31)
-    )
-    (net "/IN-"
-      (pins C3-2 J3-2 RV1-2 TP2-1 U2-30 U2-32 U2-35)
+      (pins D2-1 D1-2 C3-1 R1-1 U2-31)
     )
     (net "Net-(C4-Pad1)"
       (pins C4-1 U2-27)
@@ -1248,88 +1275,47 @@
       (pins C5-2 U2-33)
     )
     (net "Net-(C6-Pad1)"
-      (pins C6-1 C7-1 D2-1 U3-1)
+      (pins C6-1 C7-1 D4-1 U3-1)
     )
     (net GND
-      (pins R5-1 C6-2 C7-2 C8-2 C9-2 C11-1 D7-1 J1-2 U2-21 U3-2 U4-7)
+      (pins R5-1 C3-2 C6-2 C7-2 C8-2 C9-2 C11-1 D9-1 J1-2 J3-2 RV1-2 TP2-1 U2-21 U2-30
+        U2-32 U2-35 U3-2 U4-7)
     )
     (net /V+
-      (pins C8-1 C9-1 D6-2 R1-2 U2-1 U3-3)
+      (pins D1-1 C8-1 C9-1 D8-2 R2-2 U2-1 U3-3)
     )
     (net "Net-(C10-Pad2)"
       (pins C10-2 U4-8 U4-2 U4-10 U4-4 U4-6)
     )
     (net "Net-(C10-Pad1)"
-      (pins C10-1 D7-2 D8-1)
+      (pins C10-1 D9-2 D10-1)
     )
     (net "/negative voltage converter/V-"
-      (pins C11-2 D8-2)
-    )
-    (net "Net-(D1-Pad1)"
-      (pins D1-1)
-    )
-    (net "Net-(D1-Pad18)"
-      (pins D1-18)
-    )
-    (net "Net-(D1-Pad2)"
-      (pins D1-2)
-    )
-    (net "Net-(D1-Pad17)"
-      (pins D1-17 U2-20)
-    )
-    (net "Net-(D1-Pad15)"
-      (pins D1-15 D1-3 U2-19)
-    )
-    (net "Net-(D1-Pad16)"
-      (pins D1-16)
+      (pins C11-2 D10-2)
     )
     (net /DP4
-      (pins D1-4 J2-1)
-    )
-    (net "Net-(D1-Pad5)"
-      (pins D1-5 U2-18)
-    )
-    (net "Net-(D1-Pad13)"
-      (pins D1-32 D1-31 D1-14 D1-13 D3-1)
-    )
-    (net "Net-(D1-Pad6)"
-      (pins D1-6 U2-15)
-    )
-    (net "Net-(D1-Pad7)"
-      (pins D1-7 U2-22)
-    )
-    (net "Net-(D1-Pad12)"
-      (pins D1-12 U2-17)
-    )
-    (net "Net-(D1-Pad8)"
-      (pins D1-8 U2-24)
-    )
-    (net "Net-(D1-Pad11)"
-      (pins D1-11 U2-23)
+      (pins D3-4 J2-1)
     )
     (net /DP3
-      (pins D1-9 J2-3)
-    )
-    (net "Net-(D1-Pad10)"
-      (pins D1-10 U2-16)
+      (pins D3-9 J2-3)
     )
     (net /DP1
-      (pins D1-27 J2-7)
+      (pins D3-27 J2-7)
     )
     (net /DP2
-      (pins D1-22 J2-5)
+      (pins D3-22 J2-5)
     )
     (net "Net-(D3-Pad2)"
-      (pins D3-2 D4-1)
+      (pins D3-2)
     )
     (net "Net-(D4-Pad2)"
-      (pins D4-2 D5-1)
+      (pins D4-2 J1-1)
     )
     (net "Net-(D5-Pad2)"
       (pins D5-2 D6-1)
     )
     (net /IN+
-      (pins J3-1 R2-2)
+      (pins J3-1 R1-2)
     )
     (net "Net-(M1-Pad1)"
       (pins M1-1)
@@ -1343,9 +1329,6 @@
     (net "Net-(M4-Pad1)"
       (pins M4-1)
     )
-    (net "Net-(R1-Pad1)"
-      (pins R1-1 RV1-1 U1-2)
-    )
     (net "Net-(R3-Pad1)"
       (pins R3-1 U2-39)
     )
@@ -1356,7 +1339,7 @@
       (pins RV1-3 TP1-1 U1-3 U2-36)
     )
     (net "/V-"
-      (pins U2-26)
+      (pins D2-2 U2-26)
     )
     (net "Net-(U2-Pad37)"
       (pins U2-37)
@@ -1370,68 +1353,112 @@
     (net "/negative voltage converter/V+"
       (pins U4-14)
     )
-    (net "Net-(D1-Pad36)"
-      (pins D1-36 U2-13)
-    )
-    (net "Net-(D1-Pad35)"
-      (pins D1-35 U2-25)
-    )
-    (net "Net-(D1-Pad34)"
-      (pins D1-34 U2-12)
-    )
-    (net "Net-(D1-Pad33)"
-      (pins D1-33 U2-11)
-    )
-    (net "Net-(D1-Pad30)"
-      (pins D1-30 U2-6)
-    )
-    (net "Net-(D1-Pad29)"
-      (pins D1-29 U2-5)
-    )
-    (net "Net-(D1-Pad28)"
-      (pins D1-28 U2-4)
-    )
-    (net "Net-(D1-Pad26)"
-      (pins D1-26 U2-3)
-    )
-    (net "Net-(D1-Pad25)"
-      (pins D1-25 U2-7)
-    )
-    (net "Net-(D1-Pad24)"
-      (pins D1-24 U2-2)
-    )
-    (net "Net-(D1-Pad23)"
-      (pins D1-23 U2-8)
-    )
-    (net "Net-(D1-Pad21)"
-      (pins D1-21 U2-10)
-    )
-    (net "Net-(D1-Pad20)"
-      (pins D1-20 U2-9)
-    )
-    (net "Net-(D1-Pad19)"
-      (pins D1-19 U2-14)
-    )
-    (net "Net-(D2-Pad2)"
-      (pins D2-2 J1-1)
-    )
     (net "Net-(J2-Pad2)"
       (pins R5-2 J2-2 J2-4 J2-6 J2-8)
     )
-    (class kicad_default "" /DP1 /DP2 /DP3 /DP4 /IN+ "/IN-" /OSC3 /V+ "/V-"
-      "/negative voltage converter/OSC3" "/negative voltage converter/V+"
-      "/negative voltage converter/V-" GND "Net-(C1-Pad2)" "Net-(C10-Pad1)"
-      "Net-(C10-Pad2)" "Net-(C2-Pad1)" "Net-(C2-Pad2)" "Net-(C3-Pad1)" "Net-(C4-Pad1)"
-      "Net-(C5-Pad1)" "Net-(C5-Pad2)" "Net-(C6-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad10)"
-      "Net-(D1-Pad11)" "Net-(D1-Pad12)" "Net-(D1-Pad13)" "Net-(D1-Pad15)"
-      "Net-(D1-Pad16)" "Net-(D1-Pad17)" "Net-(D1-Pad18)" "Net-(D1-Pad19)"
-      "Net-(D1-Pad2)" "Net-(D1-Pad20)" "Net-(D1-Pad21)" "Net-(D1-Pad23)" "Net-(D1-Pad24)"
-      "Net-(D1-Pad25)" "Net-(D1-Pad26)" "Net-(D1-Pad28)" "Net-(D1-Pad29)"
-      "Net-(D1-Pad30)" "Net-(D1-Pad33)" "Net-(D1-Pad34)" "Net-(D1-Pad35)"
-      "Net-(D1-Pad36)" "Net-(D1-Pad5)" "Net-(D1-Pad6)" "Net-(D1-Pad7)" "Net-(D1-Pad8)"
-      "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(J2-Pad1)"
-      "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(M1-Pad1)"
-      "Net-(M2-Pad1)" "Net-(M3-Pad1)" "Net-(M4-Pad1)" "Net-(R1-Pad1)" "Net-(R3-Pad1)"
+    (net "Net-(D3-Pad36)"
+      (pins D3-36 U2-13)
+    )
+    (net "Net-(D3-Pad35)"
+      (pins D3-35 U2-25)
+    )
+    (net "Net-(D3-Pad34)"
+      (pins D3-34 U2-12)
+    )
+    (net "Net-(D3-Pad33)"
+      (pins D3-33 U2-11)
+    )
+    (net "Net-(D3-Pad13)"
+      (pins D3-32 D3-31 D3-14 D3-13 D5-1)
+    )
+    (net "Net-(D3-Pad30)"
+      (pins D3-30 U2-6)
+    )
+    (net "Net-(D3-Pad29)"
+      (pins D3-29 U2-5)
+    )
+    (net "Net-(D3-Pad28)"
+      (pins D3-28 U2-4)
+    )
+    (net "Net-(D3-Pad26)"
+      (pins D3-26 U2-3)
+    )
+    (net "Net-(D3-Pad25)"
+      (pins D3-25 U2-7)
+    )
+    (net "Net-(D3-Pad24)"
+      (pins D3-24 U2-2)
+    )
+    (net "Net-(D3-Pad23)"
+      (pins D3-23 U2-8)
+    )
+    (net "Net-(D3-Pad21)"
+      (pins D3-21 U2-10)
+    )
+    (net "Net-(D3-Pad20)"
+      (pins D3-20 U2-9)
+    )
+    (net "Net-(D3-Pad19)"
+      (pins D3-19 U2-14)
+    )
+    (net "Net-(D3-Pad18)"
+      (pins D3-18)
+    )
+    (net "Net-(D3-Pad17)"
+      (pins D3-17 U2-20)
+    )
+    (net "Net-(D3-Pad16)"
+      (pins D3-16)
+    )
+    (net "Net-(D3-Pad15)"
+      (pins D3-15 D3-3 U2-19)
+    )
+    (net "Net-(D3-Pad12)"
+      (pins D3-12 U2-17)
+    )
+    (net "Net-(D3-Pad11)"
+      (pins D3-11 U2-23)
+    )
+    (net "Net-(D3-Pad10)"
+      (pins D3-10 U2-16)
+    )
+    (net "Net-(D3-Pad8)"
+      (pins D3-8 U2-24)
+    )
+    (net "Net-(D3-Pad7)"
+      (pins D3-7 U2-22)
+    )
+    (net "Net-(D3-Pad6)"
+      (pins D3-6 U2-15)
+    )
+    (net "Net-(D3-Pad5)"
+      (pins D3-5 U2-18)
+    )
+    (net "Net-(D3-Pad1)"
+      (pins D3-1)
+    )
+    (net "Net-(D6-Pad2)"
+      (pins D6-2 D7-1)
+    )
+    (net "Net-(D7-Pad2)"
+      (pins D7-2 D8-1)
+    )
+    (net "Net-(R2-Pad1)"
+      (pins R2-1 RV1-1 U1-2)
+    )
+    (class kicad_default "" /DP1 /DP2 /DP3 /DP4 /IN+ /OSC3 /V+ "/V-" "/negative voltage converter/OSC3"
+      "/negative voltage converter/V+" "/negative voltage converter/V-" GND
+      "Net-(C1-Pad2)" "Net-(C10-Pad1)" "Net-(C10-Pad2)" "Net-(C2-Pad1)" "Net-(C2-Pad2)"
+      "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(C5-Pad1)" "Net-(C5-Pad2)" "Net-(C6-Pad1)"
+      "Net-(D1-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad10)" "Net-(D3-Pad11)"
+      "Net-(D3-Pad12)" "Net-(D3-Pad13)" "Net-(D3-Pad15)" "Net-(D3-Pad16)"
+      "Net-(D3-Pad17)" "Net-(D3-Pad18)" "Net-(D3-Pad19)" "Net-(D3-Pad2)" "Net-(D3-Pad20)"
+      "Net-(D3-Pad21)" "Net-(D3-Pad23)" "Net-(D3-Pad24)" "Net-(D3-Pad25)"
+      "Net-(D3-Pad26)" "Net-(D3-Pad28)" "Net-(D3-Pad29)" "Net-(D3-Pad30)"
+      "Net-(D3-Pad33)" "Net-(D3-Pad34)" "Net-(D3-Pad35)" "Net-(D3-Pad36)"
+      "Net-(D3-Pad5)" "Net-(D3-Pad6)" "Net-(D3-Pad7)" "Net-(D3-Pad8)" "Net-(D4-Pad2)"
+      "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)" "Net-(J2-Pad2)" "Net-(M1-Pad1)"
+      "Net-(M2-Pad1)" "Net-(M3-Pad1)" "Net-(M4-Pad1)" "Net-(R2-Pad1)" "Net-(R3-Pad1)"
       "Net-(R4-Pad1)" "Net-(RV1-Pad3)" "Net-(U2-Pad37)" "Net-(U4-Pad1)"
       (circuit
         (use_via Via[0-1]_800:400_um)

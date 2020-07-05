@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "Digital Voltmeter Module ICL7107"
-Date "2020-05-28"
-Rev "1.0"
+Date "2020-07-05"
+Rev "1.5"
 Comp "MSc. Paweł Sobótka"
 Comment1 "CC-BY-SA 4.0"
 Comment2 "by SQ7EQE"
@@ -122,14 +122,14 @@ Connection ~ 3000 4100
 Wire Wire Line
 	3000 4100 3000 3950
 $Comp
-L Device:R R2
+L Device:R R1
 U 1 1 5ECC9A9E
-P 3050 2700
-F 0 "R2" V 2843 2700 50  0000 C CNN
-F 1 "1M" V 2934 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2980 2700 50  0001 C CNN
-F 3 "~" H 3050 2700 50  0001 C CNN
-	1    3050 2700
+P 1650 2700
+F 0 "R1" V 1443 2700 50  0000 C CNN
+F 1 "1M" V 1534 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1580 2700 50  0001 C CNN
+F 3 "~" H 1650 2700 50  0001 C CNN
+	1    1650 2700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -149,8 +149,6 @@ Wire Wire Line
 	3550 2750 3550 2700
 Connection ~ 3550 2700
 Wire Wire Line
-	3550 2700 3200 2700
-Wire Wire Line
 	3900 2850 3800 2850
 Wire Wire Line
 	3800 2850 3800 3000
@@ -161,16 +159,11 @@ Wire Wire Line
 Wire Wire Line
 	3550 3000 3550 2950
 Connection ~ 3800 3000
-Connection ~ 3550 3000
-Text Label 2550 2700 0    50   ~ 0
-IN+
-Text Label 2550 3000 0    50   ~ 0
-IN-
 $Comp
-L Device:R R1
+L Device:R R2
 U 1 1 5ECD43B4
 P 2600 3700
-F 0 "R1" V 2393 3700 50  0000 C CNN
+F 0 "R2" V 2393 3700 50  0000 C CNN
 F 1 "6k8" V 2484 3700 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2530 3700 50  0001 C CNN
 F 3 "~" H 2600 3700 50  0001 C CNN
@@ -252,10 +245,10 @@ F 3 "~" H 10050 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D2
+L Diode:1N4001 D4
 U 1 1 5ECC12B1
 P 7500 1500
-F 0 "D2" H 7500 1283 50  0000 C CNN
+F 0 "D4" H 7500 1283 50  0000 C CNN
 F 1 "1N4001" H 7500 1374 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 1325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 1500 50  0001 C CNN
@@ -306,10 +299,10 @@ Connection ~ 9500 1500
 Wire Wire Line
 	9500 1500 10050 1500
 $Comp
-L power:GND #PWR02
+L power:GND #PWR03
 U 1 1 5ECC92E2
 P 7150 2000
-F 0 "#PWR02" H 7150 1750 50  0001 C CNN
+F 0 "#PWR03" H 7150 1750 50  0001 C CNN
 F 1 "GND" H 7155 1827 50  0000 C CNN
 F 2 "" H 7150 2000 50  0001 C CNN
 F 3 "" H 7150 2000 50  0001 C CNN
@@ -364,10 +357,10 @@ Wire Wire Line
 	7150 1600 7150 2000
 Connection ~ 7150 2000
 $Comp
-L power:GND #PWR01
+L power:GND #PWR02
 U 1 1 5ECD4E53
 P 4450 4850
-F 0 "#PWR01" H 4450 4600 50  0001 C CNN
+F 0 "#PWR02" H 4450 4600 50  0001 C CNN
 F 1 "GND" H 4455 4677 50  0000 C CNN
 F 2 "" H 4450 4850 50  0001 C CNN
 F 3 "" H 4450 4850 50  0001 C CNN
@@ -429,10 +422,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 3400 6250 3400
 $Comp
-L Diode:1N4001 D6
+L Diode:1N4001 D8
 U 1 1 5ED0FC3E
 P 7500 4350
-F 0 "D6" V 7546 4270 50  0000 R CNN
+F 0 "D8" V 7546 4270 50  0000 R CNN
 F 1 "1N4001" V 7455 4270 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 4175 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 4350 50  0001 C CNN
@@ -440,10 +433,10 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 4350 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4001 D5
+L Diode:1N4001 D7
 U 1 1 5ED10897
 P 7500 3950
-F 0 "D5" V 7546 3870 50  0000 R CNN
+F 0 "D7" V 7546 3870 50  0000 R CNN
 F 1 "1N4001" V 7455 3870 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 3775 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3950 50  0001 C CNN
@@ -451,10 +444,10 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3950 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4001 D4
+L Diode:1N4001 D6
 U 1 1 5ED10E1C
 P 7500 3550
-F 0 "D4" V 7546 3470 50  0000 R CNN
+F 0 "D6" V 7546 3470 50  0000 R CNN
 F 1 "1N4001" V 7455 3470 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 3375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3550 50  0001 C CNN
@@ -462,10 +455,10 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3550 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4001 D3
+L Diode:1N4001 D5
 U 1 1 5ED1133D
 P 7500 3150
-F 0 "D3" V 7546 3070 50  0000 R CNN
+F 0 "D5" V 7546 3070 50  0000 R CNN
 F 1 "1N4001" V 7455 3070 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7500 2975 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7500 3150 50  0001 C CNN
@@ -558,10 +551,6 @@ F 3 "~" H 9900 5500 50  0001 C CNN
 	1    9900 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 2700 2900 2700
-Wire Wire Line
-	2300 3000 3550 3000
 $Comp
 L logo-sq7eqe:CC-BY-SA G1
 U 1 1 5ECE705B
@@ -614,12 +603,8 @@ Text Label 8800 4500 0    50   ~ 0
 DP4
 Wire Wire Line
 	9700 5500 9350 5500
-Wire Wire Line
-	9700 5600 9350 5600
 Text Label 9550 5500 0    50   ~ 0
 IN+
-Text Label 9550 5600 0    50   ~ 0
-IN-
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J2
 U 1 1 5ECE9F29
@@ -756,10 +741,10 @@ F0 "negative voltage converter" 50
 F1 "file5ECBC5A0.sch" 50
 $EndSheet
 $Comp
-L LED_Display:LED-Display_x4_CA D1
+L LED_Display:LED-Display_x4_CA D3
 U 1 1 5EFBBD4C
 P 5450 2200
-F 0 "D1" V 4525 2475 50  0000 C CNN
+F 0 "D3" V 4525 2475 50  0000 C CNN
 F 1 "LED-Display_x4_CA" V 4616 2475 50  0000 C CNN
 F 2 "LED-display_x4:LED-Display_x4_package" H 5450 2450 50  0001 C CNN
 F 3 "" H 5450 2200 50  0001 C CNN
@@ -767,10 +752,10 @@ F 3 "" H 5450 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED_Display:LED-Display_x4_CA D1
+L LED_Display:LED-Display_x4_CA D3
 U 2 1 5EFBDD2C
 P 5450 3800
-F 0 "D1" V 6250 4050 50  0000 C CNN
+F 0 "D3" V 6250 4050 50  0000 C CNN
 F 1 "LED-Display_x4_CA" V 6350 4100 50  0000 C CNN
 F 2 "LED-display_x4:LED-Display_x4_package" H 5450 4050 50  0001 C CNN
 F 3 "" H 5450 3800 50  0001 C CNN
@@ -778,10 +763,10 @@ F 3 "" H 5450 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR03
+L power:GND #PWR05
 U 1 1 5F01191C
 P 10300 4650
-F 0 "#PWR03" H 10300 4400 50  0001 C CNN
+F 0 "#PWR05" H 10300 4400 50  0001 C CNN
 F 1 "GND" H 10305 4477 50  0000 C CNN
 F 2 "" H 10300 4650 50  0001 C CNN
 F 3 "" H 10300 4650 50  0001 C CNN
@@ -801,4 +786,76 @@ Wire Wire Line
 Connection ~ 10300 3900
 Wire Wire Line
 	10300 4400 10300 4650
+$Comp
+L Diode:1N4148 D1
+U 1 1 5F024FA0
+P 2000 2450
+F 0 "D1" V 1954 2530 50  0000 L CNN
+F 1 "1N4148" V 2045 2530 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2000 2275 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2000 2450 50  0001 C CNN
+	1    2000 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 5F0256FE
+P 2000 2950
+F 0 "D2" V 1954 3030 50  0000 L CNN
+F 1 "1N4148" V 2045 3030 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2000 2775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2000 2950 50  0001 C CNN
+	1    2000 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 2700 2000 2700
+Wire Wire Line
+	2000 2600 2000 2700
+Connection ~ 2000 2700
+Wire Wire Line
+	2000 2700 3550 2700
+Wire Wire Line
+	2000 2700 2000 2800
+Wire Wire Line
+	2000 2300 2000 2000
+Wire Wire Line
+	2000 3100 2000 3400
+$Comp
+L power:GND #PWR01
+U 1 1 5F042084
+P 3100 3000
+F 0 "#PWR01" H 3100 2750 50  0001 C CNN
+F 1 "GND" H 3105 2827 50  0000 C CNN
+F 2 "" H 3100 3000 50  0001 C CNN
+F 3 "" H 3100 3000 50  0001 C CNN
+	1    3100 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 3000 3100 3000
+Connection ~ 3550 3000
+Wire Wire Line
+	1500 2700 1150 2700
+Text Label 1250 2700 0    50   ~ 0
+IN+
+$Comp
+L power:GND #PWR04
+U 1 1 5F04FE13
+P 9550 5650
+F 0 "#PWR04" H 9550 5400 50  0001 C CNN
+F 1 "GND" H 9555 5477 50  0000 C CNN
+F 2 "" H 9550 5650 50  0001 C CNN
+F 3 "" H 9550 5650 50  0001 C CNN
+	1    9550 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 5600 9550 5600
+Wire Wire Line
+	9550 5600 9550 5650
+Text Label 2000 2200 0    50   ~ 0
+V+
+Text Label 2000 3250 0    50   ~ 0
+V-
 $EndSCHEMATC
