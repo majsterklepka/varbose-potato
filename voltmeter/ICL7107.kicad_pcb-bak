@@ -3196,7 +3196,7 @@
   (gr_text "(+)" (at 157.48 90.17 90) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.3)))
   )
-  (gr_text "Digital DC Voltmeter\nICL7107 Module" (at 123.19 123.19) (layer F.SilkS)
+  (gr_text "Digital DC Voltmeter\nICL7107 Module\nrev. 1.5" (at 123.19 124.46) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (dimension 68.58 (width 0.15) (layer Cmts.User)

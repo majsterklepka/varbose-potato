@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.6-c6e7f7d~86~ubuntu18.04.1"
     },
-    "CreationDate":  "2020-05-27T04:41:55+02:00"
+    "CreationDate":  "2020-07-06T10:22:46+02:00"
   },
   "GeneralSpecs":
   {
@@ -48,23 +48,8 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "LED-display_x4-F_Paste.gbr",
-      "FileFunction":  "SolderPaste,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "LED-display_x4-B_Paste.gbr",
-      "FileFunction":  "SolderPaste,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
       "Path":  "LED-display_x4-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "LED-display_x4-B_SilkS.gbr",
-      "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
@@ -90,10 +75,6 @@
       "Notes":  "Layer F.SilkS"
     },
     {
-      "Type":  "SolderPaste",
-      "Notes":  "Layer F.Paste"
-    },
-    {
       "Type":  "SolderMask",
       "Notes":  "Layer F.Mask"
     },
@@ -113,14 +94,6 @@
     {
       "Type":  "SolderMask",
       "Notes":  "Layer B.Mask"
-    },
-    {
-      "Type":  "SolderPaste",
-      "Notes":  "Layer B.Paste"
-    },
-    {
-      "Type":  "Legend",
-      "Notes":  "Layer B.SilkS"
     }
   ]
 }
