@@ -1,0 +1,4 @@
+Reference, Quantity, Value, Footprint, Datasheet
+D1 D2 ,2,"HDSP-5623-CA","led_display:package_led_display_0.56in_dual",""
+J1 J2 ,2,"Conn_DP1","LED-display_x4:PinHeader_2x09_P2.54mm_Horizontal","~"
+M1 M2 M4 M3 ,4,"Conn_01x01","MountingHole:MountingHole_2.2mm_M2","~"
