@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "Digital Voltmeter Module ICL7107"
-Date "2020-07-05"
-Rev "1.5"
+Date "2020-07-31"
+Rev "2.0"
 Comp "MSc. Paweł Sobótka"
 Comment1 "CC-BY-SA 4.0"
 Comment2 "by SQ7EQE"
@@ -160,17 +160,6 @@ Wire Wire Line
 	3550 3000 3550 2950
 Connection ~ 3800 3000
 $Comp
-L Device:R R2
-U 1 1 5ECD43B4
-P 2600 3700
-F 0 "R2" V 2393 3700 50  0000 C CNN
-F 1 "6k8" V 2484 3700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2530 3700 50  0001 C CNN
-F 3 "~" H 2600 3700 50  0001 C CNN
-	1    2600 3700
-	0    1    -1   0   
-$EndComp
-$Comp
 L Device:R_POT RV1
 U 1 1 5ECD49A0
 P 3350 3450
@@ -184,23 +173,9 @@ $EndComp
 Wire Wire Line
 	3900 3450 3800 3450
 Wire Wire Line
-	3900 3250 3350 3250
-Wire Wire Line
-	3000 3250 3000 3300
-Wire Wire Line
 	3350 3300 3350 3250
-Connection ~ 3350 3250
-Wire Wire Line
-	3350 3250 3000 3250
 Wire Wire Line
 	3350 3600 3350 3700
-Wire Wire Line
-	3350 3700 3000 3700
-Wire Wire Line
-	3000 3700 3000 3600
-Wire Wire Line
-	2750 3700 3000 3700
-Connection ~ 3000 3700
 Text Label 3550 2450 0    50   ~ 0
 OSC3
 Wire Wire Line
@@ -341,13 +316,13 @@ V+
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5ECD1D0E
-P 6750 1500
-F 0 "J1" H 6668 1717 50  0000 C CNN
-F 1 "+9...12V DC" H 6668 1626 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 6750 1500 50  0001 C CNN
-F 3 "~" H 6750 1500 50  0001 C CNN
-	1    6750 1500
-	-1   0    0    -1  
+P 6750 1600
+F 0 "J1" H 6668 1817 50  0000 C CNN
+F 1 "+9...12V DC" H 6668 1726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 6750 1600 50  0001 C CNN
+F 3 "~" H 6750 1600 50  0001 C CNN
+	1    6750 1600
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6950 1500 7350 1500
@@ -369,9 +344,7 @@ F 3 "" H 4450 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 4850 4450 4750
-Wire Wire Line
-	2450 3700 2150 3700
-Text Label 2250 3700 0    50   ~ 0
+Text Label 2500 3150 2    50   ~ 0
 V+
 Wire Wire Line
 	5000 4500 5350 4500
@@ -518,9 +491,6 @@ DP3
 NoConn ~ 3900 3650
 Wire Wire Line
 	3800 3000 3800 3450
-Connection ~ 3800 3450
-Wire Wire Line
-	3800 3450 3650 3450
 $Comp
 L ICL71xx:ICL7107 U2
 U 1 1 5ECBFA44
@@ -543,13 +513,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5ECD2461
-P 9900 5500
-F 0 "J3" H 9818 5717 50  0000 C CNN
-F 1 "meas. conn" H 9818 5626 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 9900 5500 50  0001 C CNN
-F 3 "~" H 9900 5500 50  0001 C CNN
-	1    9900 5500
-	1    0    0    -1  
+P 9900 5600
+F 0 "J3" H 9900 5350 50  0000 C CNN
+F 1 "meas. conn" H 10100 5700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 9900 5600 50  0001 C CNN
+F 3 "~" H 9900 5600 50  0001 C CNN
+	1    9900 5600
+	1    0    0    1   
 $EndComp
 $Comp
 L logo-sq7eqe:CC-BY-SA G1
@@ -601,8 +571,6 @@ Text Label 8800 4000 0    50   ~ 0
 DP3
 Text Label 8800 4500 0    50   ~ 0
 DP4
-Wire Wire Line
-	9700 5500 9350 5500
 Text Label 9550 5500 0    50   ~ 0
 IN+
 $Comp
@@ -687,42 +655,36 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x01 TP2
 U 1 1 5ECCF309
-P 3650 3650
-F 0 "TP2" V 3700 3700 50  0000 L CNN
-F 1 "~" V 3613 3730 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 3650 3650 50  0001 C CNN
-F 3 "~" H 3650 3650 50  0001 C CNN
-	1    3650 3650
-	0    1    1    0   
+P 2350 3700
+F 0 "TP2" V 2400 3750 50  0000 L CNN
+F 1 "~" V 2313 3780 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.3mm_L11.0mm" H 2350 3700 50  0001 C CNN
+F 3 "~" H 2350 3700 50  0001 C CNN
+	1    2350 3700
+	-1   0    0    1   
 $EndComp
-Connection ~ 3650 3450
-Wire Wire Line
-	3650 3450 3500 3450
 $Comp
 L Connector_Generic:Conn_01x01 TP1
 U 1 1 5ECCFF8E
-P 2350 3250
-F 0 "TP1" H 2350 3350 50  0000 C CNN
-F 1 "~" H 2268 3116 50  0000 C CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2350 3250 50  0001 C CNN
-F 3 "~" H 2350 3250 50  0001 C CNN
-	1    2350 3250
+P 3450 3150
+F 0 "TP1" H 3450 3250 50  0000 C CNN
+F 1 "~" H 3368 3016 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.3mm_L11.0mm" H 3450 3150 50  0001 C CNN
+F 3 "~" H 3450 3150 50  0001 C CNN
+	1    3450 3150
 	-1   0    0    1   
 $EndComp
-Connection ~ 3000 3250
 $Comp
 L Reference_Voltage:LM285Z-1.2 U1
 U 1 1 5ECD40DA
-P 3000 3450
-F 0 "U1" H 3000 3666 50  0000 C CNN
-F 1 "LM285Z-1.2" H 3000 3575 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3000 3250 50  0001 C CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/LM285-D.PDF" H 3000 3450 50  0001 C CIN
-	1    3000 3450
-	0    -1   1    0   
+P 2850 3450
+F 0 "U1" H 2850 3666 50  0000 C CNN
+F 1 "LM285Z-1.2" H 2850 3575 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2850 3250 50  0001 C CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/LM285-D.PDF" H 2850 3450 50  0001 C CIN
+	1    2850 3450
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	2550 3250 3000 3250
 $Comp
 L Graphic:Logo_Open_Hardware_Large LOGO1
 U 1 1 5ED11310
@@ -824,17 +786,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 5F042084
-P 3100 3000
-F 0 "#PWR01" H 3100 2750 50  0001 C CNN
-F 1 "GND" H 3105 2827 50  0000 C CNN
-F 2 "" H 3100 3000 50  0001 C CNN
-F 3 "" H 3100 3000 50  0001 C CNN
-	1    3100 3000
-	0    1    1    0   
+P 3150 3000
+F 0 "#PWR01" H 3150 2750 50  0001 C CNN
+F 1 "GND" H 3155 2827 50  0000 C CNN
+F 2 "" H 3150 3000 50  0001 C CNN
+F 3 "" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 3000 3100 3000
-Connection ~ 3550 3000
 Wire Wire Line
 	1500 2700 1150 2700
 Text Label 1250 2700 0    50   ~ 0
@@ -851,11 +810,69 @@ F 3 "" H 9550 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 5600 9550 5600
-Wire Wire Line
 	9550 5600 9550 5650
 Text Label 2000 2200 0    50   ~ 0
 V+
 Text Label 2000 3250 0    50   ~ 0
 V-
+Wire Wire Line
+	3800 3450 3800 3700
+Wire Wire Line
+	3800 3700 3350 3700
+Connection ~ 3800 3450
+Connection ~ 3350 3700
+Wire Wire Line
+	3500 3450 3650 3450
+Wire Wire Line
+	3650 3450 3650 3250
+Wire Wire Line
+	3650 3250 3900 3250
+Wire Wire Line
+	2550 3150 2450 3150
+Wire Wire Line
+	2550 3700 2850 3700
+Wire Wire Line
+	2850 3300 2850 3250
+Wire Wire Line
+	2850 3250 3350 3250
+Wire Wire Line
+	2850 3600 2850 3700
+Connection ~ 2850 3700
+Wire Wire Line
+	2850 3700 3350 3700
+Wire Wire Line
+	9350 5500 9700 5500
+Wire Wire Line
+	9550 5600 9700 5600
+$Comp
+L logo-sq7eqe:JLCPCB G2
+U 1 1 5F247858
+P 6000 6500
+F 0 "G2" H 6000 6375 60  0001 C CNN
+F 1 "JLCPCB" H 6000 6625 60  0001 C CNN
+F 2 "logo-sq7eqe:jlcpcb" H 6000 6500 50  0001 C CNN
+F 3 "" H 6000 6500 50  0001 C CNN
+	1    6000 6500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 3000
+Wire Wire Line
+	3150 3000 3550 3000
+Wire Wire Line
+	3650 3150 3650 3250
+Connection ~ 3650 3250
+$Comp
+L Device:R R2
+U 1 1 5ECD43B4
+P 2700 3150
+F 0 "R2" V 2493 3150 50  0000 C CNN
+F 1 "6k8" V 2584 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2630 3150 50  0001 C CNN
+F 3 "~" H 2700 3150 50  0001 C CNN
+	1    2700 3150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2850 3150 2850 3250
+Connection ~ 2850 3250
 $EndSCHEMATC

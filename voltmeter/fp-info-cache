@@ -1,4 +1,4 @@
-18374731128312533
+18379519698464200
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80906,8 +80906,22 @@ cc-by-sa
 0
 0
 logo-sq7eqe
+digital-voltmeter-2
+
+
+0
+0
+0
+logo-sq7eqe
 gnugpl
 
+
+0
+0
+0
+logo-sq7eqe
+jlcpcb
+pcb manufacturer JLCPCB
 
 0
 0
@@ -80919,6 +80933,13 @@ net-cable-conn
 0
 0
 0
+screwterminals
+Ark-2_5.08mm
+
+
+0
+2
+2
 testprobesmd
 testprobe-smd-223
 module CMS SOT223 4 pins
