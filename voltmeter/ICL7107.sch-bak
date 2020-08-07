@@ -192,7 +192,7 @@ U 1 1 5ECBFA2A
 P 8800 1500
 F 0 "U3" H 8800 1742 50  0000 C CNN
 F 1 "L7805" H 8800 1651 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8825 1350 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8825 1350 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8800 1450 50  0001 C CNN
 	1    8800 1500
 	1    0    0    -1  
@@ -344,7 +344,7 @@ F 3 "" H 4450 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 4850 4450 4750
-Text Label 2650 2850 1    50   ~ 0
+Text Label 2500 3150 2    50   ~ 0
 V+
 Wire Wire Line
 	5000 4500 5350 4500
@@ -666,12 +666,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 TP1
 U 1 1 5ECCFF8E
-P 2350 3250
-F 0 "TP1" H 2350 3350 50  0000 C CNN
-F 1 "~" H 2268 3116 50  0000 C CNN
-F 2 "Connector_Pin:Pin_D1.3mm_L11.0mm" H 2350 3250 50  0001 C CNN
-F 3 "~" H 2350 3250 50  0001 C CNN
-	1    2350 3250
+P 3450 3150
+F 0 "TP1" H 3450 3250 50  0000 C CNN
+F 1 "~" H 3368 3016 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.3mm_L11.0mm" H 3450 3150 50  0001 C CNN
+F 3 "~" H 3450 3150 50  0001 C CNN
+	1    3450 3150
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -685,8 +685,6 @@ F 3 "http://www.onsemi.com/pub_link/Collateral/LM285-D.PDF" H 2850 3450 50  0001
 	1    2850 3450
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	2550 3250 2650 3250
 $Comp
 L Graphic:Logo_Open_Hardware_Large LOGO1
 U 1 1 5ED11310
@@ -788,17 +786,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 5F042084
-P 3100 3000
-F 0 "#PWR01" H 3100 2750 50  0001 C CNN
-F 1 "GND" H 3105 2827 50  0000 C CNN
-F 2 "" H 3100 3000 50  0001 C CNN
-F 3 "" H 3100 3000 50  0001 C CNN
-	1    3100 3000
-	0    1    1    0   
+P 3150 3000
+F 0 "#PWR01" H 3150 2750 50  0001 C CNN
+F 1 "GND" H 3155 2827 50  0000 C CNN
+F 2 "" H 3150 3000 50  0001 C CNN
+F 3 "" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 3000 3100 3000
-Connection ~ 3550 3000
 Wire Wire Line
 	1500 2700 1150 2700
 Text Label 1250 2700 0    50   ~ 0
@@ -832,29 +827,12 @@ Wire Wire Line
 	3650 3450 3650 3250
 Wire Wire Line
 	3650 3250 3900 3250
-$Comp
-L Device:R R2
-U 1 1 5ECD43B4
-P 2650 3050
-F 0 "R2" V 2443 3050 50  0000 C CNN
-F 1 "6k8" V 2534 3050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2580 3050 50  0001 C CNN
-F 3 "~" H 2650 3050 50  0001 C CNN
-	1    2650 3050
-	1    0    0    1   
-$EndComp
 Wire Wire Line
-	2650 2900 2650 2800
-Wire Wire Line
-	2650 3200 2650 3250
-Connection ~ 2650 3250
-Wire Wire Line
-	2650 3250 2850 3250
+	2550 3150 2450 3150
 Wire Wire Line
 	2550 3700 2850 3700
 Wire Wire Line
 	2850 3300 2850 3250
-Connection ~ 2850 3250
 Wire Wire Line
 	2850 3250 3350 3250
 Wire Wire Line
@@ -877,4 +855,24 @@ F 3 "" H 6000 6500 50  0001 C CNN
 	1    6000 6500
 	1    0    0    -1  
 $EndComp
+Connection ~ 3550 3000
+Wire Wire Line
+	3150 3000 3550 3000
+Wire Wire Line
+	3650 3150 3650 3250
+Connection ~ 3650 3250
+$Comp
+L Device:R R2
+U 1 1 5ECD43B4
+P 2700 3150
+F 0 "R2" V 2493 3150 50  0000 C CNN
+F 1 "6k8" V 2584 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2630 3150 50  0001 C CNN
+F 3 "~" H 2700 3150 50  0001 C CNN
+	1    2700 3150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2850 3150 2850 3250
+Connection ~ 2850 3250
 $EndSCHEMATC

@@ -182,8 +182,6 @@ Wire Wire Line
 	4700 4000 4700 3500
 Wire Wire Line
 	3900 4500 3500 4500
-Text Label 3600 4500 0    50   ~ 0
-OSC3
 Wire Wire Line
 	6750 4500 6750 4900
 Connection ~ 6750 4500
@@ -231,8 +229,6 @@ F 3 "" H 3750 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 2400 3750 2200
-Text Label 3750 2300 0    50   ~ 0
-V+
 Wire Wire Line
 	3750 3400 3750 3550
 Wire Wire Line
@@ -244,4 +240,28 @@ Wire Wire Line
 Connection ~ 6500 3500
 Wire Wire Line
 	6500 3500 6500 4000
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2EEE2B
+P 3750 2200
+F 0 "#PWR?" H 3750 2050 50  0001 C CNN
+F 1 "+5V" H 3765 2373 50  0000 C CNN
+F 2 "" H 3750 2200 50  0001 C CNN
+F 3 "" H 3750 2200 50  0001 C CNN
+	1    3750 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5F2EF5C3
+P 6750 4900
+F 0 "#PWR?" H 6750 5000 50  0001 C CNN
+F 1 "-5V" H 6765 5073 50  0000 C CNN
+F 2 "" H 6750 4900 50  0001 C CNN
+F 3 "" H 6750 4900 50  0001 C CNN
+	1    6750 4900
+	-1   0    0    1   
+$EndComp
+Text GLabel 3500 4500 0    50   Input ~ 0
+OSC3
 $EndSCHEMATC

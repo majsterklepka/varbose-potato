@@ -51,7 +51,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 2300 3900 2300
 Wire Wire Line
-	3350 2450 3900 2450
+	3350 2450 3700 2450
 $Comp
 L Device:C_Small C5
 U 1 1 5ECC169D
@@ -182,17 +182,13 @@ Wire Wire Line
 	3900 2000 3400 2000
 Wire Wire Line
 	3900 4550 3400 4550
-Text Label 3550 4550 0    50   ~ 0
-V-
-Text Label 3550 2000 0    50   ~ 0
-V+
 $Comp
 L Regulator_Linear:L7805 U3
 U 1 1 5ECBFA2A
 P 8800 1500
 F 0 "U3" H 8800 1742 50  0000 C CNN
 F 1 "L7805" H 8800 1651 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8825 1350 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8825 1350 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8800 1450 50  0001 C CNN
 	1    8800 1500
 	1    0    0    -1  
@@ -311,8 +307,6 @@ Wire Wire Line
 Wire Wire Line
 	10050 1500 10300 1500
 Connection ~ 10050 1500
-Text Label 10150 1500 0    50   ~ 0
-V+
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5ECD1D0E
@@ -344,8 +338,6 @@ F 3 "" H 4450 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 4850 4450 4750
-Text Label 2500 3150 2    50   ~ 0
-V+
 Wire Wire Line
 	5000 4500 5350 4500
 Wire Wire Line
@@ -469,8 +461,6 @@ Wire Wire Line
 	6750 2850 6750 3650
 Wire Wire Line
 	7500 4500 7500 4900
-Text Label 7500 4700 0    50   ~ 0
-V+
 Wire Wire Line
 	5350 1700 5250 1700
 Wire Wire Line
@@ -811,10 +801,6 @@ F 3 "" H 9550 5650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9550 5600 9550 5650
-Text Label 2000 2200 0    50   ~ 0
-V+
-Text Label 2000 3250 0    50   ~ 0
-V-
 Wire Wire Line
 	3800 3450 3800 3700
 Wire Wire Line
@@ -875,4 +861,90 @@ $EndComp
 Wire Wire Line
 	2850 3150 2850 3250
 Connection ~ 2850 3250
+Text GLabel 3600 2550 0    50   Output ~ 0
+OSC3
+Wire Wire Line
+	3600 2550 3700 2550
+Wire Wire Line
+	3700 2550 3700 2450
+Connection ~ 3700 2450
+Wire Wire Line
+	3700 2450 3900 2450
+$Comp
+L power:-5V #PWR?
+U 1 1 5F2FB8B9
+P 2000 3400
+F 0 "#PWR?" H 2000 3500 50  0001 C CNN
+F 1 "-5V" H 2015 3573 50  0000 C CNN
+F 2 "" H 2000 3400 50  0001 C CNN
+F 3 "" H 2000 3400 50  0001 C CNN
+	1    2000 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5F2FBD08
+P 3400 4550
+F 0 "#PWR?" H 3400 4650 50  0001 C CNN
+F 1 "-5V" V 3415 4678 50  0000 L CNN
+F 2 "" H 3400 4550 50  0001 C CNN
+F 3 "" H 3400 4550 50  0001 C CNN
+	1    3400 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2FC6FD
+P 2000 2000
+F 0 "#PWR?" H 2000 1850 50  0001 C CNN
+F 1 "+5V" H 2015 2173 50  0000 C CNN
+F 2 "" H 2000 2000 50  0001 C CNN
+F 3 "" H 2000 2000 50  0001 C CNN
+	1    2000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2FCFDB
+P 2450 3150
+F 0 "#PWR?" H 2450 3000 50  0001 C CNN
+F 1 "+5V" V 2465 3278 50  0000 L CNN
+F 2 "" H 2450 3150 50  0001 C CNN
+F 3 "" H 2450 3150 50  0001 C CNN
+	1    2450 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2FD8C0
+P 3400 2000
+F 0 "#PWR?" H 3400 1850 50  0001 C CNN
+F 1 "+5V" V 3415 2128 50  0000 L CNN
+F 2 "" H 3400 2000 50  0001 C CNN
+F 3 "" H 3400 2000 50  0001 C CNN
+	1    3400 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2FF53F
+P 10300 1500
+F 0 "#PWR?" H 10300 1350 50  0001 C CNN
+F 1 "+5V" H 10315 1673 50  0000 C CNN
+F 2 "" H 10300 1500 50  0001 C CNN
+F 3 "" H 10300 1500 50  0001 C CNN
+	1    10300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F301FA0
+P 7500 4900
+F 0 "#PWR?" H 7500 4750 50  0001 C CNN
+F 1 "+5V" H 7515 5073 50  0000 C CNN
+F 2 "" H 7500 4900 50  0001 C CNN
+F 3 "" H 7500 4900 50  0001 C CNN
+	1    7500 4900
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
